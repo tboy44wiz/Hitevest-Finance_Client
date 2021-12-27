@@ -24,12 +24,12 @@ const Footer = () => {
                 <div>
                     <h3>Useful Link</h3>
                     <ul>
-                    <li><Link to="">About us</Link></li>
-                    <li><Link to="">Plan</Link></li>
-                    <li><Link to="">Blog</Link></li>
-                    <li><Link to="">Contact</Link></li>
-                    <li><Link to="">Privacy &amp; Policy</Link></li>
-                    <li><Link to="">Terms &amp; Conditions</Link></li>
+                    <li><Link to="/about">About us</Link></li>
+                    <li><Link to="/plans">Plan</Link></li>
+                    <li><Link to="/blogs">Blog</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/privacy_and_policy">Privacy &amp; Policy</Link></li>
+                    <li><Link to="/terms_and_condition">Terms &amp; Conditions</Link></li>
                     </ul>
                 </div>
                 <div>
