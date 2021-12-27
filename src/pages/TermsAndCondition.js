@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate } from 'react-router';
 import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet';
 
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
@@ -21,6 +22,13 @@ const TermsAndCondition = () => {
 
     return (
         <div>
+            <Helmet>
+                <meta charSet='utf-8' />
+                <meta name='description' content='Elite Wealth Management With hitevest finance.' />
+                <title>Hitevest Finance | Terms & Condition</title>
+                <link rel="canonical" href="https://www.hitevest.com/terms_and_condition" />
+            </Helmet>
+
             <Nav />
             
             {/* ==== Contact Section ==== */}

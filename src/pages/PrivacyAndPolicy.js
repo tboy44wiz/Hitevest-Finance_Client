@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate } from 'react-router';
 import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet';
 
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
@@ -21,6 +22,13 @@ const PrivacyAndPolicy = () => {
 
     return (
         <div>
+            <Helmet>
+                <meta charSet='utf-8' />
+                <meta name='description' content='Elite Wealth Management With hitevest finance.' />
+                <title>Hitevest Finance | privacy & Policy</title>
+                <link rel="canonical" href="https://www.hitevest.com/privacy_and_policy" />
+            </Helmet>
+
             <Nav />
             
             {/* ==== Privacy And Policy Section ==== */}

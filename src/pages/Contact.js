@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate } from 'react-router';
 import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet';
 
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
@@ -24,6 +25,13 @@ const Contact = () => {
 
     return (
         <div>
+            <Helmet>
+                <meta charSet='utf-8' />
+                <meta name='description' content='Elite Wealth Management With hitevest finance.' />
+                <title>Hitevest Finance | Contact</title>
+                <link rel="canonical" href="https://www.hitevest.com/contact" />
+            </Helmet>
+
             <Nav />
             
             {/* ==== Contact Section ==== */}

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Nav from '../components/Nav';
-import { Navigate } from 'react-router'
+import { Navigate } from 'react-router';
+import { Helmet } from 'react-helmet';
 
 import styles from '../styles/Landing.module.scss';
 import OfferComp from '../components/OfferComp';
@@ -68,6 +69,13 @@ const Landing = () => {
 
     return (
         <div className='countainer-fluid'>
+            <Helmet>
+                <meta charSet='utf-8' />
+                <meta name='description' content='Elite Wealth Management With hitevest finance.' />
+                <title>Hitevest Finance | Home</title>
+                <link rel="canonical" href="https://www.hitevest.com/" />
+            </Helmet>
+            
             <Nav />
             <section className='container'>
                 <div className={styles.firstSection}> 

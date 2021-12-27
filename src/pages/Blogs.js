@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navigate } from 'react-router';
 import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet';
 
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
@@ -76,6 +77,13 @@ const Blogs = () => {
 
     return (
         <div>
+            <Helmet>
+                <meta charSet='utf-8' />
+                <meta name='description' content='Elite Wealth Management With hitevest finance.' />
+                <title>Hitevest Finance | Blogs</title>
+                <link rel="canonical" href="https://www.hitevest.com/blogs" />
+            </Helmet>
+
             <Nav />
             
             {/* ==== Blogs Section ==== */}
