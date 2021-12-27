@@ -21,7 +21,7 @@ import ThickedRadioButton from '../assets/thcked_radio_button.png';
 const Plans = () => {
     const user = useSelector(state => state.user.userDetails);
 
-    if (!user) {
+    if (user) {
         return <Navigate to='/dashboard'/>;
     }
 

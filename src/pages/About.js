@@ -28,7 +28,7 @@ import JefferyFelix from '../assets/jeffery_felix.png';
 const About = () => {
     const user = useSelector(state => state.user.userDetails);
 
-    if (!user) {
+    if (user) {
         return <Navigate to='/dashboard'/>;
     }
 

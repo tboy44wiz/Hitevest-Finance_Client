@@ -25,7 +25,7 @@ const BlogDetail = () => {
     const location = useLocation();
     const { blog } = location.state;
 
-    if (!user) {
+    if (user) {
         return <Navigate to='/dashboard'/>;
     }
 

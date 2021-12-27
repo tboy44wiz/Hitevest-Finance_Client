@@ -64,7 +64,7 @@ const Landing = () => {
         ],
     });
 
-    if(!user) return <Navigate to='/dashboard'/>
+    if(user) return <Navigate to='/dashboard'/>
 
     return (
         <div className='countainer-fluid'>
