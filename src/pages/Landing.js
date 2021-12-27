@@ -64,9 +64,10 @@ const Landing = () => {
         ],
     });
 
-    // if(user) return <Navigate to='/dashboard'/>
+    if(!user) return <Navigate to='/dashboard'/>
+
     return (
-        <div>
+        <div className='countainer-fluid'>
             <Nav />
             <section className='container'>
                 <div className={styles.firstSection}> 
@@ -302,7 +303,9 @@ const Landing = () => {
                     ))}
                 </div>
             </section>
-            <Footer></Footer>
+
+
+            <Footer />
         </div>
     )
 }

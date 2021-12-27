@@ -19,7 +19,7 @@ import TermsAndCondition from './pages/TermsAndCondition'
 
 const App = () => {
   return (
-      <div>
+      <>
           <Routes>
             <Route path="/" element={<Landing/>} />
             <Route path="/about" element={ <About /> } />
@@ -35,7 +35,7 @@ const App = () => {
             <Route path="/reset-password" element={<ResetPass />} />
           </Routes>
           <Dashboard />
-      </div>
+      </>
   )
 }
 

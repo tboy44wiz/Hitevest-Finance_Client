@@ -11,7 +11,6 @@ import style from '../styles/PrivacyAndPolicy.module.scss';
 import EL1 from '../assets/EL1.png';
 import PrivacyImage from '../assets/privacy_image.png';
 import Shadow from '../assets/shadow.png';
-import C1 from '../assets/C1.svg';
 
 const PrivacyAndPolicy = () => {
     const user = useSelector(state => state.user.userDetails);

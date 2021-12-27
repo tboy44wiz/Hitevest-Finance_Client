@@ -1,82 +1,48 @@
-.navContainer {
-    height: 80px;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 9999;
-    position: fixed;
-    width: 100%;
-    background: white;
-    top: 0;
-}
-.navContainer img {
-    height: 50px;
-}
-.rightCont { 
-    display: flex;
-    align-items: center;
-}
-.rightCont a {
-    color: #2F2E2E;
-    padding: 0 15px;
-}
-.linkCont {
-    padding-right: 25px;
-}
-.rightCont button {
-    background: #FF9900;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-
 .appHeader {
     height: 80px;
     width: 100%;
-    padding: 0 5%;
     z-index: 9999;
     position: fixed;
     background: white;
-    top: 0;
+    inset: 0;
   
-    .navbarWrapper {
-      background: white;
+    .brand__logo {
+      height: 60px;
+    }
 
-      .brand__logo {
-        height: 60px;
-      }
-  
-      ul {
-        list-style-type: none;
-        li {
-          a {
-            color: #0B3A5A;
-            padding: 0 15px;
-            text-decoration: none;
-      
+    ul {
+      list-style-type: none;
+      li {
+
+        &:last-child {
+          padding-right: 0;
+        };
+        
+        a {
+          color: #0B3A5A;
+          padding: 0 0 0 30px;
+          text-decoration: none;
+    
+          &:hover {
+            color: #9d9d9d !important;
+          };
+    
+          .registerButton {
+            margin-left: 20px;
+            margin-right: 0;
+            border: 1px solid #FF9900;
+            background: #FF9900;
+            color: #fff;
+            padding: 7px 15px;
+            cursor: pointer;
+    
             &:hover {
-              color: #9d9d9d !important;
-            };
-      
-            .registerButton {
+              background: transparent;
               border: 1px solid #FF9900;
-              background: #FF9900;
-              color: #fff;
-              padding: 7px 15px;
-              cursor: pointer;
-      
-              &:hover {
-                background: transparent;
-                border: 1px solid #FF9900;
-                color: #FF9900;
-              };
+              color: #FF9900;
             };
           };
         };
       };
-      
     };
   };
