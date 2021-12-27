@@ -76,7 +76,7 @@
     .tAndcSection {
         width: 100%;
         margin: 0 auto;
-        padding: 65px 0 40px 0;
+        padding: 65px 0 0 0;
         display: flex;
         align-items: flex-start;
         position: relative;
@@ -90,7 +90,7 @@
         };
     
         .tAndcWrapper {
-            height: 480px;
+            // height: 480px;
             width: 70%;
             margin: 0 auto;
             display: flex;
