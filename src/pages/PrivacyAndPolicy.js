@@ -47,13 +47,13 @@ const PrivacyAndPolicy = () => {
             <section className={ style.pAndpContentSection }>
                 <h4>Privacy Policy</h4>
                 <p>
-                    Read the details as to how First Group Financial collect and process data, including your personal information.
+                    Read the details as to how Hitevest Financial collect and process data, including your personal information.
                 </p>
                 <br />
 
                 <h4>Overview</h4>
                 <p>
-                    First Group Financial is committed to keeping your information private. 
+                    Hitevest Financial is committed to keeping your information private. 
                     By ‘your information’, we mean any information about you, provided either 
                     by you or a third party.
                 </p>
@@ -69,14 +69,14 @@ const PrivacyAndPolicy = () => {
                 </p>
                 <br />
                 <p>
-                    By using any part of the website, or providing personal information to First Group Financial, 
+                    By using any part of the website, or providing personal information to Hitevest Financial, 
                     you consent to us processing your personal information as set out in this policy.
                 </p>
                 <br />
 
                 <h4>General principles</h4>
                 <p>
-                    If you are an individual or corporate client of First Group Financial, 
+                    If you are an individual or corporate client of Hitevest Financial, 
                     the way in which information about you is held and used is described 
                     in section 4 of our terms and conditions, and our privacy notices, which 
                     can be accessed via our terms and conditions page.
@@ -151,7 +151,7 @@ const PrivacyAndPolicy = () => {
                 </span> <br />
                 <p>
                     It is also important to be aware that we also collect information using surveys. These are typically 
-                    used to understand how First Group Financial can improve its products and services, and we will always 
+                    used to understand how Hitevest Financial can improve its products and services, and we will always 
                     undertake to provide an overview of aggregated and anonymised responses to participants within a reasonable 
                     period of time. We may also use the information for promotional purposes. Please note that we would never 
                     publish any feedback or information in such a way that it could be linked to an individual or entity without 

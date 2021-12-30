@@ -7,7 +7,7 @@ const Nav = () => {
     return (
         <div className={ styles.appHeader }>
             <div className='container p-0'>
-                <nav className="navbar navbar-expand-lg navbar-light">
+                <nav className="navbar navbar-expand-lg navbar-light bg-white">
 
                     <router-link to="/" className="nav-link">
                         <img src={logo} className={ styles.brand__logo } alt="" />

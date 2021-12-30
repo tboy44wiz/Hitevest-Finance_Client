@@ -46,3 +46,21 @@
       };
     };
   };
+
+
+
+
+
+
+
+  @media screen and (max-width: 575px) {
+    .appHeader {
+      padding: 0 20px;
+    };
+  };
+
+  @media screen and (max-width: 425px) {
+    .appHeader {
+      padding: 0 20px;
+    };
+  };

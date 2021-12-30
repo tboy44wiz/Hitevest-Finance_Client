@@ -57,8 +57,8 @@ const Contact = () => {
 
                     <ul>
                         <li><img src={C1} alt="" /> 4th Floor, Technopolis Gårda , Johan Willins gata, Sweden</li>
-                        <li><img src={C2} alt="" />+46 701947357</li>
-                        <li><img src={C3} alt="" />support@firstgroupfinancial.com</li>
+                        <li><img src={C2} alt="" />+46 701897357</li>
+                        <li><img src={C3} alt="" />Info@hitevest.com</li>
                     </ul>
                 </div>
 

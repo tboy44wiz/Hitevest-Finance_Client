@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Nav from '../components/Nav';
@@ -37,6 +37,7 @@ import WhiteCircleRing from '../assets/white_circle_ring.png';
 import Blog1 from '../assets/blog1_image.png';
 import Blog2 from '../assets/blog2_image.png';
 import Blog3 from '../assets/blog3_image.png';
+import reactDom from 'react-dom';
 
 
 const Landing = () => {
@@ -65,10 +66,37 @@ const Landing = () => {
         ],
     });
 
+    useEffect(() => {
+        //  For Testimonial Sliding.
+        const remarkItemsWrapper = document.querySelector(`.${ styles.remarkItemsWrapper }`);
+        const remarkItems = document.querySelectorAll(`.${ styles.remarkItem }`);
+        const prevButton = document.querySelector(`.${ styles.prevButton }`);
+        const nextButton = document.querySelector(`.${ styles.nextButton }`);
+
+        let counter = 0;
+
+        //  Prev and Next Button Actions.
+        prevButton.addEventListener('click', () => {
+            if (counter <= 0) return;
+            remarkItemsWrapper.style.transition = "transform 0.4s ease-in-out";
+            counter = (counter - 1) % (remarkItems.length - 1);
+            remarkItemsWrapper.style.transform = 'translateX(' + (-480 * counter) + 'px)';
+            console.log(counter);
+        });
+        nextButton.addEventListener('click', () => {
+            if (counter >= 1) return;
+            remarkItemsWrapper.style.transition = "transform 0.4s ease-in-out";
+            counter = (counter + 1) % (remarkItems.length - 1);
+            remarkItemsWrapper.style.transform = 'translateX(' + (-480 * counter) + 'px)';
+            console.log(counter);
+        });
+    });
+    
+
     if(user) return <Navigate to='/dashboard'/>
 
     return (
-        <div className='countainer-fluid'>
+        <div className='container-fluid'>
             <Helmet>
                 <meta charSet='utf-8' />
                 <meta name='description' content='Elite Wealth Management With hitevest finance.' />
@@ -77,6 +105,7 @@ const Landing = () => {
             </Helmet>
             
             <Nav />
+            
             <section className='container'>
                 <div className={styles.firstSection}> 
                     <article>
@@ -131,7 +160,7 @@ const Landing = () => {
                     <div className={styles.thirdSectionACont}>
                         <article>
                             <h1>Join Us</h1>
-                            <p>Complex risks will always be part of life, and managing them well requires specialized expertise. Expertise that understands what you need to protect what you’ve built. Let First Group Financial take the worry out of protecting it all and help you build for the future.
+                            <p>Complex risks will always be part of life, and managing them well requires specialized expertise. Expertise that understands what you need to protect what you’ve built. Let Hitevest Financial take the worry out of protecting it all and help you build for the future.
                             </p>
                             <button>Get Started</button>
                         </article>
@@ -209,7 +238,7 @@ const Landing = () => {
 
 
             {/*==== Frequently Asked Question ====*/}
-            <section className={styles.fifthSection}>
+            <section className={`container ${ styles.fifthSection }`}>
                 <h1>Frequently Asked Question</h1>
                 <span className={styles.shortDash}></span>
                 <p className={styles.lHeading}>
@@ -244,34 +273,58 @@ const Landing = () => {
             <section className={`container ${ styles.sixthSection }`}>
                 <h1>What Our Client Say</h1>
                 <div className={ styles.remarkItemsWrapper }>
-                    <Remark
-                        name="Nicoletta Piccio" 
-                        starCount={5}
-                        content="I have been investing with First Group Financial since late 2019, 
-                        and my experience has been very positive. I am very pleased with the return 
-                        and will continue to do so as part of my retirement income package."
-                    />
-                    <Remark
-                        name="Rhoda White" 
-                        starCount={4}
-                        content="First Group Financial made me feel important and gave me the 
-                        information i needed about investing at a level i could understand. The 
-                        representatives always gave me sound advice, especially about the PAMM investment."
-                    />
-                    <Remark
-                        name="Donald I" 
-                        starCount={5}
-                        content="First group financial was great to work with. This was my first time doing 
-                        this kind of investment, but they answered every question and walked me through the 
-                        process as you would expect for a new investor."
-                    />
+                    {/* <div id="lastRemarkItem" className={ styles.remarkItem }>
+                        <Remark
+                            name="Donald I" 
+                            starCount={5}
+                            content="Hitevest financial was great to work with. This was my first time doing 
+                            this kind of investment, but they answered every question and walked me through the 
+                            process as you would expect for a new investor."
+                        />
+                    </div> */}
+                    <div className={ styles.remarkItem }>
+                        <Remark
+                            name="Nicoletta Piccio" 
+                            starCount={5}
+                            content="I have been investing with Hitevest Financial since late 2019, 
+                            and my experience has been very positive. I am very pleased with the return 
+                            and will continue to do so as part of my retirement income package."
+                        />
+                    </div>
+                    <div className={ styles.remarkItem }>
+                        <Remark
+                            name="Rhoda White" 
+                            starCount={4}
+                            content="Hitevest Financial made me feel important and gave me the 
+                            information i needed about investing at a level i could understand. The 
+                            representatives always gave me sound advice, especially about the PAMM investment."
+                        />
+                    </div>
+                    <div className={ styles.remarkItem }>
+                        <Remark
+                            name="Donald I" 
+                            starCount={5}
+                            content="Hitevest financial was great to work with. This was my first time doing 
+                            this kind of investment, but they answered every question and walked me through the 
+                            process as you would expect for a new investor."
+                        />
+                    </div>
+                    {/* <div id="firstRemarkItem" className={ styles.remarkItem }>
+                        <Remark
+                            name="Nicoletta Piccio" 
+                            starCount={5}
+                            content="I have been investing with Hitevest Financial since late 2019, 
+                            and my experience has been very positive. I am very pleased with the return 
+                            and will continue to do so as part of my retirement income package."
+                        />
+                    </div> */}
                 </div>
 
                 <div className={ styles.arrowWrapper }>
-                    <span>
+                    <span className={ styles.prevButton }>
                         <img src={ ArrowLeft } alt="" />
                     </span>
-                    <span>
+                    <span className={ styles.nextButton }>
                         <img src={ ArrowRight } alt="" />
                     </span>
                 </div>
@@ -280,15 +333,17 @@ const Landing = () => {
 
 
             {/*==== Subscribe to our Newsletter ====*/}
-            <section className={`container ${ styles.seventhSection }`}>
-                <h1>Subscribe to our Newsletter</h1>
-                <form>
-                    <div className={ styles.inputAndButtonWrapper }>
-                        <input type="text" />
-                        <button>Subscribe</button>
-                    </div>
-                </form>
-                <img src={ WhiteCircleRing } className={ styles.whiteCircleRing } alt="" />
+            <section className={`container p-0 ${ styles.seventhSection }`}>
+                <div className={ styles.seventhSectionInnerWrapper }>
+                    <h1>Subscribe to our Newsletter</h1>
+                    <form>
+                        <div className={ styles.inputAndButtonWrapper }>
+                            <input type="text" />
+                            <button>Subscribe</button>
+                        </div>
+                    </form>
+                    <img src={ WhiteCircleRing } className={ styles.whiteCircleRing } alt="" />
+                </div>
             </section>
 
 

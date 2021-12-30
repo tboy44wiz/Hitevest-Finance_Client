@@ -50,7 +50,7 @@ const TermsAndCondition = () => {
                     Please read these terms and conditions carefully. By accessing this web site and any pages 
                     hereof, you are indicating that you have read, acknowledge and agree to be bound by these 
                     Terms of Use. If you do not agree to these Terms of Use, do not access this web site. 
-                    First Group Financial reserves the right to change these Terms of Use which you are 
+                    Hitevest Financial reserves the right to change these Terms of Use which you are 
                     responsible for regularly reviewing and your continued use of this web site constitutes 
                     agreement to all such changes.
                 </p>
@@ -66,13 +66,13 @@ const TermsAndCondition = () => {
                 </p>
                 <br />
                 <p>
-                    First Group Financial reserves the right, in its sole discretion, without any obligation and 
+                    Hitevest Financial reserves the right, in its sole discretion, without any obligation and 
                     without any notice requirement, to change, improve or correct the information, materials and 
                     descriptions on this web site and to suspend and/or deny access to this web site for scheduled 
                     or unscheduled maintenance, upgrades, improvements or corrections. The information and 
                     materials on this web site may contain typographical errors or inaccuracies. Any dated 
-                    information is published as of its date only, and First Group Financial does not undertake 
-                    any obligation or responsibility to update or amend any such information. First Group 
+                    information is published as of its date only, and Hitevest Financial does not undertake 
+                    any obligation or responsibility to update or amend any such information. Hitevest 
                     Financial may discontinue or change any product or service described in or offered on this 
                     web site at any time.
                 </p>
@@ -90,11 +90,11 @@ const TermsAndCondition = () => {
                     finds any provision of these Terms of Use, or a portion thereof, to be unenforceable, that 
                     provision shall be enforced to the maximum extent permissible so as to affect the intent of 
                     these Terms of Use, and the remainder of these Terms of Use shall continue in full force and 
-                    effect. These Terms of Use constitutes the entire agreement between First Group Financial and 
+                    effect. These Terms of Use constitutes the entire agreement between Hitevest Financial and 
                     you with respect to this site and it supersedes all prior or contemporaneous communications, 
-                    agreements and understandings between First Group Financial and you with respect to the 
-                    subject matter hereof. First Group Financial  and you acknowledge and agree that unless 
-                    expressly included in any other agreement between First Group Financial and you the 
+                    agreements and understandings between Hitevest Financial and you with respect to the 
+                    subject matter hereof. Hitevest Financial  and you acknowledge and agree that unless 
+                    expressly included in any other agreement between Hitevest Financial and you the 
                     requirements of the E-Commerce Directive (00/31/EC) as implemented are excluded to the fullest 
                     extent permissible by law. A printed version of these Terms of Use shall be admissible in 
                     judicial or administrative proceedings.
@@ -103,15 +103,15 @@ const TermsAndCondition = () => {
 
                 <h4>SPIC disclosure</h4>
                 <p>
-                    Securities and cash held by individuals in First Group Financial & Co. accounts are protected 
+                    Securities and cash held by individuals in Hitevest Financial & Co. accounts are protected 
                     up to their full net equity value by a combination of coverage provided by the Securities 
                     Investor Protection Corporation (SIPC), a non-profit organization created by an Act of Congress 
-                    and additional protection purchased from a group captive insurance company by First Group 
+                    and additional protection purchased from a group captive insurance company by Hitevest 
                     Financial ("excess coverage"). SIPC protects up to $500,000 of your securities, of which up to 
                     $250,000 may be un-invested cash. Excess Coverage provides additional protection up to the full 
                     net equity value of each account including unlimited coverage for un-invested cash. SIPC and 
                     excess coverage apply only to securities and cash in the exclusive possession and control of 
-                    First Group Financial and do not protect against losses due to fluctuations in the market. 
+                    Hitevest Financial and do not protect against losses due to fluctuations in the market. 
                     Additional information about SIPC and asset protection may also be found at www.sipc.org.  
                     name, e-mail address) will be used to facilitate communication. Your contact information and 
                     message may be included in the communication.

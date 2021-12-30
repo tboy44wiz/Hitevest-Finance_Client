@@ -7,7 +7,7 @@ import Star from '../assets/star.png';
 
 const Remark = ({name, starCount, content}) => {
     return (
-        <div className={ styles.remarkWrapper }>
+        <>
             <h3>{name}</h3>
             <div>
                 {
@@ -21,7 +21,7 @@ const Remark = ({name, starCount, content}) => {
                 }              
             </div>
             <p>{content}</p>
-        </div>
+        </>
     )
 }
 
