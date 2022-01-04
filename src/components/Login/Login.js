@@ -13,7 +13,6 @@ const Login = ({setStatus}) => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(state.email, state.password);
 
         if(state.email && state.password){
             const formDetails = new FormData()

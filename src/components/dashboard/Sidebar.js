@@ -13,7 +13,7 @@ const Sidebar = () => {
     const dispatch = useDispatch()
     const location = useLocation()
     const navigate = useNavigate()
-    const {user, referral_link } = useSelector(state => state.user.userDetails)
+    const {name, referral_link } = useSelector(state => state.user.userDetails)
     const copyReferral = () => {
         window.navigator.clipboard.writeText(referral_link)
         window.alert('link copied')
@@ -61,7 +61,7 @@ const Sidebar = () => {
                         <img src={photo} alt="" />
                     </div>
                 </div>
-                <p className={styles.profileName}>{user.name}</p>
+                <p className={styles.profileName}>{name}</p>
                 <div className={styles.buttonCont}>
                     {
                         location.pathname === '/dashboard/profile' ?

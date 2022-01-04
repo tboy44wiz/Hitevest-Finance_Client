@@ -5,8 +5,9 @@ const userSlice = createSlice({
     initialState: {
         userDetails: JSON.parse(localStorage.getItem('user'))?JSON.parse(localStorage.getItem('user')): null,
         isVerified: false,
+        message: '',
         error: '',
-        loading: false
+        loading: false,
     },
     reducers: {
         updateUser: (state, action) => {
@@ -16,6 +17,10 @@ const userSlice = createSlice({
         clearUser: (state) => {
             state.isVerified = false;
             state.user = null
+        },
+        updateMessage: (state, action) => {
+            state.message = action.payload;
+            state.loading = false
         },
         isError: (state) => {
             state.error = "There was an error"
@@ -36,6 +41,6 @@ const userSlice = createSlice({
 
 
 
-export const {updateUser, clearUser, isError, isLoading, verified, logout} = userSlice.actions
+export const {updateUser, clearUser, updateMessage, isError, isLoading, verified, logout} = userSlice.actions
 
 export default userSlice.reducer

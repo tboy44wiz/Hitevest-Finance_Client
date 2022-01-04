@@ -5,23 +5,39 @@ import { Link } from 'react-router-dom'
 import styles from '../../styles/Login.module.css'
 import { verifyOtp } from '../../store/asyncActions/userAsyncActions'
 import { useNavigate } from 'react-router'
-import Loader from '../Loader'
+import Loader from '../Loader';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure();
+
+
 const Otp = () => {
     const [otp, setOtp] = useState('')
-    const userId = useSelector(state => state.user.userDetails.Data.id)
+    const { userDetails, message } = useSelector(state => state.user);
+    const userId = userDetails.id;
     const {loading} = useSelector(state => state.user)
     const {isVerified} = useSelector(state => state.user)
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("OTP::: ", otp);
-        console.log("USER::: ", userId);
         const formObj = new FormData()
         formObj.append('otp', otp)
         formObj.append('user_id', userId)
         dispatch(verifyOtp(formObj))
     }
+    
+    useEffect(() => {
+        if(userId) {
+            toast.success(message, {
+                theme: "light",
+                hideProgressBar: true,
+                autoClose: false,
+            });
+        }
+    }, [isVerified, navigate]);
+
     useEffect(() => {
         if(isVerified) {
             navigate('/dashboard')
