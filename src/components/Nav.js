@@ -6,11 +6,11 @@ import styles from '../styles/Nav.module.scss'
 const Nav = () => {
     return (
         <div className={ styles.appHeader }>
-            <div className='container p-0'>
+            <div className='container'>
                 <nav className="navbar navbar-expand-lg navbar-light bg-white">
 
                     <router-link to="/" className="nav-link">
-                        <img src={logo} className={ styles.brand__logo } alt="" />
+                        <img src={logo} className={ styles.brandLogo } alt="" />
                     </router-link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

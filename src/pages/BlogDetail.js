@@ -13,7 +13,7 @@ import style from '../styles/Blogs.module.scss';
 import EL1 from '../assets/EL1.png';
 import BlogImage from '../assets/blog_image.png';
 import Shadow from '../assets/shadow.png';
-import SindleBlogImage from '../assets/single_blog_image.png';
+import SingleBlogImage from '../assets/single_blog_image.png';
 import TwitterIcon from '../assets/twitter_icon.png';
 import PinterestIcon from '../assets/pinterest_icon.png';
 import LinkedInIcon from '../assets/linkedIn_icon.png';
@@ -59,7 +59,7 @@ const BlogDetail = () => {
                     <strong>{ blog.title }</strong>
                     {/* <img src={ blog.image } alt="" /> */}
                     {/* <p>{ blog.subTitle }</p> */}
-                    <img src={ SindleBlogImage } alt="" />
+                    <img src={ SingleBlogImage } alt="" />
                     <p>
                         Several major websites briefly went down Thursday in a widespread outage 
                         linked to content distribution network Akamai. By about 12:50 p.m. ET, 

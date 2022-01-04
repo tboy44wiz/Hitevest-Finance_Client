@@ -8,13 +8,15 @@ import { useNavigate } from 'react-router'
 import Loader from '../Loader'
 const Otp = () => {
     const [otp, setOtp] = useState('')
-    const userId = useSelector(state => state.user.userDetails.id)
+    const userId = useSelector(state => state.user.userDetails.Data.id)
     const {loading} = useSelector(state => state.user)
     const {isVerified} = useSelector(state => state.user)
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
+        console.log("OTP::: ", otp);
+        console.log("USER::: ", userId);
         const formObj = new FormData()
         formObj.append('otp', otp)
         formObj.append('user_id', userId)

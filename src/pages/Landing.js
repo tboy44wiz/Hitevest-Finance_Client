@@ -81,14 +81,12 @@ const Landing = () => {
             remarkItemsWrapper.style.transition = "transform 0.4s ease-in-out";
             counter = (counter - 1) % (remarkItems.length - 1);
             remarkItemsWrapper.style.transform = 'translateX(' + (-480 * counter) + 'px)';
-            console.log(counter);
         });
         nextButton.addEventListener('click', () => {
             if (counter >= 1) return;
             remarkItemsWrapper.style.transition = "transform 0.4s ease-in-out";
             counter = (counter + 1) % (remarkItems.length - 1);
             remarkItemsWrapper.style.transform = 'translateX(' + (-480 * counter) + 'px)';
-            console.log(counter);
         });
     });
     
@@ -238,7 +236,7 @@ const Landing = () => {
 
 
             {/*==== Frequently Asked Question ====*/}
-            <section className={`container ${ styles.fifthSection }`}>
+            <section className={`container px-1 px-sm-2 ${ styles.fifthSection }`}>
                 <h1>Frequently Asked Question</h1>
                 <span className={styles.shortDash}></span>
                 <p className={styles.lHeading}>
@@ -273,15 +271,6 @@ const Landing = () => {
             <section className={`container ${ styles.sixthSection }`}>
                 <h1>What Our Client Say</h1>
                 <div className={ styles.remarkItemsWrapper }>
-                    {/* <div id="lastRemarkItem" className={ styles.remarkItem }>
-                        <Remark
-                            name="Donald I" 
-                            starCount={5}
-                            content="Hitevest financial was great to work with. This was my first time doing 
-                            this kind of investment, but they answered every question and walked me through the 
-                            process as you would expect for a new investor."
-                        />
-                    </div> */}
                     <div className={ styles.remarkItem }>
                         <Remark
                             name="Nicoletta Piccio" 
@@ -309,15 +298,6 @@ const Landing = () => {
                             process as you would expect for a new investor."
                         />
                     </div>
-                    {/* <div id="firstRemarkItem" className={ styles.remarkItem }>
-                        <Remark
-                            name="Nicoletta Piccio" 
-                            starCount={5}
-                            content="I have been investing with Hitevest Financial since late 2019, 
-                            and my experience has been very positive. I am very pleased with the return 
-                            and will continue to do so as part of my retirement income package."
-                        />
-                    </div> */}
                 </div>
 
                 <div className={ styles.arrowWrapper }>

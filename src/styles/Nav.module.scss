@@ -55,12 +55,26 @@
 
   @media screen and (max-width: 575px) {
     .appHeader {
+      width: 100%;
       padding: 0 20px;
     };
   };
 
   @media screen and (max-width: 425px) {
     .appHeader {
+      width: 100%;
       padding: 0 20px;
+    };
+  };
+
+  @media screen and (max-width: 375px) {
+    .appHeader {
+      width: 100%;
+      padding: 5px 15px;
+      box-sizing: border-box;
+
+      .brandLogo {
+        width: 120px;
+      };
     };
   };

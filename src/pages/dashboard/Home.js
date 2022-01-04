@@ -54,52 +54,52 @@ const Home = () => {
         <div>
             <div className={styles.cardContainer}>
                 <HomeCard 
-                 name='Deposit Wallet' 
-                 total='600'
-                 percent={2.5} 
-                 color='#F2A218'
-                 image={chart1}
-                 type='rise'
+                    name='Deposit Wallet' 
+                    total='600'
+                    percent={2.5} 
+                    color='#F2A218'
+                    image={chart1}
+                    type='rise'
                  />
                  <HomeCard 
-                 name='Interest Wallet' 
-                 total='600'
-                 percent={2.5} 
-                 color='#5893F3'
-                 image={chart2}
-                 type='drop'
+                    name='Interest Wallet' 
+                    total='600'
+                    percent={2.5} 
+                    color='#5893F3'
+                    image={chart2}
+                    type='drop'
                  />
                  <HomeCard 
-                 name='Total Investment' 
-                 total='600'
-                 percent={2.5} 
-                 color='#EB5757'
-                 image={chart3}
-                 type='drop'
+                    name='Total Investment' 
+                    total='600'
+                    percent={2.5} 
+                    color='#EB5757'
+                    image={chart3}
+                    type='drop'
                  />
                  <HomeCard 
-                 name='Total Deposit' 
-                 total='600'
-                 percent={2.5} 
-                 color='#56CCF2'
-                 image={chart4}
-                 type='rise'
+                    name='Total Deposit' 
+                    total='600'
+                    percent={2.5} 
+                    color='#56CCF2'
+                    image={chart4}
+                    type='rise'
                  />
                  <HomeCard 
-                 name='Total Withdrawal' 
-                 total='600'
-                 percent={2.5} 
-                 color='#9B51E0'
-                 image={chart5}
-                 type='drop'
+                    name='Total Withdrawal' 
+                    total='600'
+                    percent={2.5} 
+                    color='#9B51E0'
+                    image={chart5}
+                    type='drop'
                  />
                  <HomeCard 
-                 name='Total Referal' 
-                 total='600'
-                 percent={2.5} 
-                 color='#0862A0'
-                 image={chart6}
-                 type='rise'
+                    name='Total Referal' 
+                    total='600'
+                    percent={2.5} 
+                    color='#0862A0'
+                    image={chart6}
+                    type='rise'
                  />
 
             </div>
